@@ -1,0 +1,85 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Roboto Mono";
+	text-decoration: none;
+	text-align: center;
+	color: white;
+}
+body { background-color: #1b262c; }
+
+h1.banner {
+	font-size: 25px;
+	color: #E7E7E7;
+}
+
+div.container {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	overflow: hidden;
+	padding: 25px;
+	position: absolute;
+	background-color: #2C323D;
+}
+
+input#search {
+	width: calc(80% - 10px);
+	border: none;
+	padding: 10px;
+	background-color: transparent;
+	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	outline: none;
+	filter: blur(1px);
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.35);
+}
+input#search:focus {
+	pointer-events:none;
+	filter: none;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 5);
+}
+
+button[type=submit] {
+	width: calc(20% - 10px);
+	padding: 10px;
+	float: right;
+	border: none;
+	background-color: transparent;
+	z-index: -1;
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	outline: none;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.35);
+}
+button[type=submit]:hover {
+	pointer-events:none;
+	filter: none;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 5);
+
+}
+input[type=submit]:active {
+	border-bottom: 2.5px solid #286EA8;
+	transform: translateY(2.5px);
+}
+
+div.container table {
+	width: 100%;
+	font-size: 15px;
+}
+
+div.container th {
+	width: 25%;
+	color: #4D86C0;
+	text-transform: uppercase;
+}
+
+a {
+	color: white;
+}
+a:hover {
+	font-weight: bold;
+}
